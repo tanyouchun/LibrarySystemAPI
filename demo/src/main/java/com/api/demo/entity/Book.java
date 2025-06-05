@@ -31,6 +31,15 @@ public class Book {
     public Book() {
     }
 
+    public Book(Long id, String isbn, String title, String author, boolean borrowed, Borrower borrower) {
+        this.id = id;
+        this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.borrowed = borrowed;
+        this.borrower = borrower;
+    }
+
     public Long getId() {
         return id;
     }
